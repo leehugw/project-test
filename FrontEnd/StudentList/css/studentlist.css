@@ -1,0 +1,91 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-container .nav-link {
+    color: black;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-container .nav-link:hover,
+.navbar-container .nav-link.active {
+    color: #3D67BA;
+}
+
+.navbar-container .dropdown-menu .dropdown-item:hover {
+    color: #3D67BA !important;
+    background-color: transparent !important;
+}
+
+.navbar-container .dropdown .btn-secondary:hover,
+.navbar-container .dropdown .btn-secondary:focus {
+    color: #3D67BA !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.background {
+    background-color: #3D67BA;
+}
+
+.button {
+    background-color: #3D67BA;
+}
+
+.button:hover {
+    background-color: #2b4a8c;
+}
+
+.thread {
+    color: #3D67BA !important;
+}
+
+.custom-row {
+    box-shadow: 0 0 0 1px #dee2e6;
+    background-color: #fff;
+}
+
+.text {
+    color: #3D67BA;
+}
+
+table {
+    border-spacing: 0 5px;
+    border-collapse: separate;
+}
+
+.custom-select-width {
+    min-width: 160px;
+}
+
+/* Thêm: Table responsive */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table {
+    width: 100%;
+    min-width: 800px; /* Đảm bảo table đủ rộng */
+}
+
+.table th, .table td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.table img {
+    max-width: 50px;
+}
+
+/* Thêm: Hover cho link trong table */
+.table .text:hover {
+    color: #2b4a8c;
+    text-decoration: underline;
+}
