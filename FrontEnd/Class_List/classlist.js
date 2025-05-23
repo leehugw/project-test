@@ -214,8 +214,8 @@ document.addEventListener("DOMContentLoaded", function () {
                             <td class="text-center">${student.class_name || '-'}</td>
                             <td class="text-center">${student.major_name || '-'}</td>
                             <td class="text-center">${student.faculty_name || '-'}</td>
-                            <td class="text-center"><a class="text" href="http://localhost:3000/api/student/profile?student_id=${student.student_id}"><i class="fas fa-external-link-alt"></i></a></td>
-                            <td class="text-center border-end"><a class="text" href="http://localhost:3000/api/student/academicstatistic?student_id=${student.student_id}"><i class="fas fa-chart-line"></i></a></td>
+                            <td class="text-center"><a class="text" href="https://project-test-xloz.onrender.com/api/student/profile?student_id=${student.student_id}"><i class="fas fa-external-link-alt"></i></a></td>
+                            <td class="text-center border-end"><a class="text" href="https://project-test-xloz.onrender.com/api/student/academicstatistic?student_id=${student.student_id}"><i class="fas fa-chart-line"></i></a></td>
                         </tr>
                     `;
                 }

@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const token = localStorage.getItem('token');
     if (!token) {
         alert("Bạn chưa đăng nhập. Chuyển về trang chủ...");
-        window.location.href = "http://localhost:3000/";
+        window.location.href = "https://project-test-xloz.onrender.com/";
         return;
     }
 });
@@ -36,7 +36,7 @@ document.querySelectorAll(".btn-student-info").forEach(el => {
         const token = localStorage.getItem("token"); 
         if (!token) {
             alert("Bạn chưa đăng nhập. Vui lòng đăng nhập lại!");
-            window.location.href = "http://localhost:3000/";  // Điều hướng đến trang đăng nhập
+            window.location.href = "https://project-test-xloz.onrender.com/";  // Điều hướng đến trang đăng nhập
         } else {
             window.location.href = "/api/student/profile";  
         }
@@ -47,7 +47,7 @@ document.getElementById("btn-student-chatbotcard").addEventListener("click", fun
     const token = localStorage.getItem("token");
     if (!token) {
         alert("Bạn chưa đăng nhập. Vui lòng đăng nhập lại!");
-        window.location.href = "http://localhost:3000/";
+        window.location.href = "https://project-test-xloz.onrender.com/";
     } else {
         window.location.href = "/api/student/chatbot?token=" + token;
     }
@@ -58,7 +58,7 @@ document.getElementById("btn-student-chatbot").addEventListener("click", functio
     const token = localStorage.getItem("token"); 
     if (!token) {
         alert("Bạn chưa đăng nhập. Vui lòng đăng nhập lại!");
-        window.location.href = "http://localhost:3000/";  // Điều hướng đến trang đăng nhập
+        window.location.href = "https://project-test-xloz.onrender.com/";  // Điều hướng đến trang đăng nhập
     } else {
         // Nếu có token, điều hướng đến chatbot
         window.location.href = "/api/student/chatbot?token=" + token;  // Điều hướng đến route chatbot
@@ -96,7 +96,7 @@ document.querySelectorAll(".btn-student-progress").forEach(el => {
         const token = localStorage.getItem("token");
         if (!token) {
             alert("Bạn chưa đăng nhập. Vui lòng đăng nhập lại!");
-            window.location.href = "http://localhost:3000/";
+            window.location.href = "https://project-test-xloz.onrender.com/";
         } else {
             window.location.href = "/api/student/academicstatistic";
         }
@@ -109,7 +109,7 @@ document.querySelectorAll(".btn-student-schedule").forEach(el => {
         const token = localStorage.getItem("token");
         if (!token) {
             alert("Bạn chưa đăng nhập. Vui lòng đăng nhập lại!");
-            window.location.href = "http://localhost:3000/";
+            window.location.href = "https://project-test-xloz.onrender.com/";
         } else {
             window.location.href = "/api/student/schedule-optimize";
         }
@@ -122,7 +122,7 @@ document.querySelectorAll(".btn-student-english").forEach(el => {
         const token = localStorage.getItem("token");
         if (!token) {
             alert("Bạn chưa đăng nhập. Vui lòng đăng nhập lại!");
-            window.location.href = "http://localhost:3000/";
+            window.location.href = "https://project-test-xloz.onrender.com/";
         } else {
             window.location.href = "/api/student/english-certificate";
         }

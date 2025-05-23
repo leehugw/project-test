@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const token = localStorage.getItem('token');
   if (!token) {
     alert("Bạn chưa đăng nhập. Chuyển về trang chủ...");
-    window.location.href = "http://localhost:3000/";
+    window.location.href = "https://project-test-xloz.onrender.com/";
     return;
   }
 
@@ -59,7 +59,7 @@ function checkTokenAndRedirect() {
   const token = localStorage.getItem("token");
   if (!token) {
     alert("Bạn chưa đăng nhập. Vui lòng đăng nhập lại!");
-    window.location.href = "http://localhost:3000/";
+    window.location.href = "https://project-test-xloz.onrender.com/";
     return false;
   }
   return token;
@@ -160,7 +160,7 @@ function sendMessage() {
   // Không trả lời lại nữa sau khi người dùng gửi tin nhắn
   // (Không thêm bất kỳ logic trả lời nào sau khi người dùng gửi tin nhắn)
 
-  fetch(`http://localhost:3000/api/student/chatbot-data`, {
+  fetch(`https://project-test-xloz.onrender.com/api/student/chatbot-data`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

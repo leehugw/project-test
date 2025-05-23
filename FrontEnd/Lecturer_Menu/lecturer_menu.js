@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (!token) {
         alert("Bạn chưa đăng nhập. Chuyển về trang chủ...");
-        window.location.href = "http://localhost:3000/";
+        window.location.href = "https://project-test-xloz.onrender.com/";
         return;
     }
 });
@@ -62,7 +62,7 @@ document.getElementById("btn-lecturer-card").addEventListener("click", function(
     e.preventDefault();
     if (!token) {
         alert("Bạn chưa đăng nhập. Vui lòng đăng nhập lại!");
-        window.location.href = "http://localhost:3000/";
+        window.location.href = "https://project-test-xloz.onrender.com/";
     } else {
         window.location.href = "/api/lecturer/profile";
     }
@@ -73,7 +73,7 @@ document.getElementById("btn-lecturer-info").addEventListener("click", function(
     const token = localStorage.getItem("token");
     if (!token) {
         alert("Bạn chưa đăng nhập. Vui lòng đăng nhập lại!");
-        window.location.href = "http://localhost:3000/";
+        window.location.href = "https://project-test-xloz.onrender.com/";
     } else {
         // Sửa thành redirect đến trang HTML thay vì API endpoint
         window.location.href = "/api/lecturer/profile";
@@ -86,7 +86,7 @@ document.querySelectorAll(".btn-lecturer-classlist").forEach(el => {
         e.preventDefault();
         if (!token) {
             alert("Bạn chưa đăng nhập. Vui lòng đăng nhập lại!");
-            window.location.href = "http://localhost:3000/";
+            window.location.href = "https://project-test-xloz.onrender.com/";
         } else {
             window.location.href = "/api/lecturer/classlist";
         }

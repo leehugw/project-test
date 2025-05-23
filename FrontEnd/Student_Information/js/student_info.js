@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (!token) {
         alert("Vui lòng đăng nhập để xem thông tin");
-        window.location.href = "http://localhost:3000/";
+        window.location.href = "https://project-test-xloz.onrender.com/";
         return;
     }
 
@@ -79,7 +79,7 @@ async function fetchStudentProfile(token) {
         // Kiểm tra nếu URL có query 
         if (urlParams.toString()) {
             const studentId = urlParams.get('student_id');
-            StudentProfileDataUrl = `http://localhost:3000/api/student/profile-data?student_id=${studentId}`;
+            StudentProfileDataUrl = `https://project-test-xloz.onrender.com/api/student/profile-data?student_id=${studentId}`;
         } else {
             StudentProfileDataUrl = `/api/student/profile-data`;
         }

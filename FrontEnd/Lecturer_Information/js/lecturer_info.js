@@ -84,10 +84,10 @@ async function fetchLecturerProfile(token) {
 
         if(urlParams.toString()){
             const lecturerId = urlParams.get('lecturer_id');
-            LecturerProfileData = `http://localhost:3000/api/lecturer/profile-data?lecturer_id=${lecturerId}`;
+            LecturerProfileData = `https://project-test-xloz.onrender.com/api/lecturer/profile-data?lecturer_id=${lecturerId}`;
         }
         else {
-            LecturerProfileData = `http://localhost:3000/api/lecturer/profile-data`;
+            LecturerProfileData = `https://project-test-xloz.onrender.com/api/lecturer/profile-data`;
         }
 
         const token = localStorage.getItem("token");

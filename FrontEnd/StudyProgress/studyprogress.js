@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (!token) {
         alert("Vui lòng đăng nhập để xem thông tin");
-        window.location.href = "http://localhost:3000/";
+        window.location.href = "https://project-test-xloz.onrender.com/";
         return;
     }
 
@@ -65,8 +65,8 @@ function StudentAcademicData(token) {
     // Kiểm tra nếu URL có query 
     if (urlParams.toString()) {
         const studentId = urlParams.get('student_id');
-        StudentAcademicDataUrl = `http://localhost:3000/api/student/student-academic-data?student_id=${studentId}`;
-        GroupSemesterDataUrl = `http://localhost:3000/api/student/group-by-semester-data?student_id=${studentId}`
+        StudentAcademicDataUrl = `https://project-test-xloz.onrender.com/api/student/student-academic-data?student_id=${studentId}`;
+        GroupSemesterDataUrl = `https://project-test-xloz.onrender.com/api/student/group-by-semester-data?student_id=${studentId}`
 
     } else {
         StudentAcademicDataUrl = `/api/student/student-academic-data`;
@@ -346,7 +346,7 @@ document.querySelectorAll(".btn-student-info").forEach(el => {
         const token = localStorage.getItem("token"); 
         if (!token) {
             alert("Bạn chưa đăng nhập. Vui lòng đăng nhập lại!");
-            window.location.href = "http://localhost:3000/";  // Điều hướng đến trang đăng nhập
+            window.location.href = "https://project-test-xloz.onrender.com/";  // Điều hướng đến trang đăng nhập
         } else {
             // Nếu có token, điều hướng đến chatbot
             window.location.href = "/api/student/profile?token=" + token;  // Điều hướng đến route chatbot

@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <td class="text-center">${l.email ||"-" }</td>
                     <td class="text-center">${l.faculty ||"-"}</td>
                     <td class="text-center">
-                        <a class="text" href="http://localhost:3000/api/lecturer/profile?lecturer_id=${l.lecturer_id}"><i class="fas fa-external-link-alt"></i></a>
+                        <a class="text" href="https://project-test-xloz.onrender.com/api/lecturer/profile?lecturer_id=${l.lecturer_id}"><i class="fas fa-external-link-alt"></i></a>
                     </td>
                 </tr>
             `).join('');
